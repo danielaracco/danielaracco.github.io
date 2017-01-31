@@ -1,0 +1,14 @@
+#main [class*='col-md-12'] {
+    height: 200px;
+
+}
+
+#main [class*='col-md-6'] {
+    height: 60px;
+}
+#main [class*='col-md-1'] {
+    height: 60px;
+}
+#main [class*='col-md-3'] {
+    height: 60px;
+}
