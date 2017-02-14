@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Larry The Leaser!</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+
+    }
+        .header {
+            height: 50px;
+            min-height: 50px;
+            max-height: 50px;
+            text-align: center;
+        }
+
+        .nav {
+            height: 60px;
+            min-height: 60px;
+            max-height: 60px;
+        }
+
+        .footer {
+            height: 60px;
+            min-height: 60px;
+            max-height: 60px;
+            text-align: center;
+        }
+
+        .image img {
+          display:block;
+          margin-left: auto;
+          margin-right:auto;
+          height: 140px;
+          min-height: 140px;
+          max-height: 140px;
+
+        }
+
+        .bodyContent {
+            height: 140px;
+            min-height: 140px;
+            max-height: 140px;
+            font-size: 16px;
+
+
+        }
+
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 randomColor header">
+                Larry The Leaser!
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 randomColor nav"> About Larry </div>
+            <div class="col-md-3 randomColor nav"> Search</div>
+            <div class="col-md-3 randomColor nav"> Reviews </div>
+            <div class="col-md-3 randomColor nav"> Contact Us </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 randomColor image">
+              <img src="images/car.jpg" alt="car">
+
+            </div>
+            <div class="col-md-8 randomColor bodyContent">
+              My website design would help fix the problems we discussed in class by using nicer colors.
+              My color scheme would be blue, white and silver. I would also ensure that all my fonts look nice
+              together and compliment each other.  My navigation bar would be properly working and have effective
+              links to each of them. My design would have an easy to use layout
+              and make it user friendly. Lastly, I would ensure that my website has content that matters
+              to the targeted audience!
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 randomColor bodyContent"> This is Larry the Leaser! Isnt he cute??
+
+            </div>
+            <div class="col-md-4 randomColor image">
+              <img src="images/larry.jpg" alt="larry">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 randomColor footer">
+                Thanks for dropping by!
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        $(document).ready(function() {
+            var bodyColumns = $(".randomColor");
+            bodyColumns.each(function() {
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+            })
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+        })
+    </script>
+</body>
+
+</html>
