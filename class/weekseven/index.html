@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Daniela</title>
+</head>
+
+<body>
+    Hello World
+
+    <script>
+// jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        $(document).ready(function() {
+            var bodyColumns = $(".randomColor");
+            bodyColumns.each(function() {
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+            })
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+        })
+        //() means execute a function
+        // means ignore this line
+        /* Everything between this is ignored...  */
+
+        //alert("This is a popup");
+        console.log("This is for debugging messages"); /* fixing an error*/
+
+        var myvar;
+        var myanothervar = " Here is my another var";
+
+        //alert(myanothervar);
+        console.log(myanothervar);
+
+        //concatenation
+
+        var myname = "Racco";
+        var myfirstname = "Daniela";
+        alert("My first name is " + myfirstname + " and my last name is "+
+            myname);
+        //{} code block
+        function saymyname() {
+            //everything in code block will be executed
+            console.log("Your name i"+myname);
+
+        }
+
+        //calling the function
+        saymyname()
+
+        function saymyname2(name) {
+            //everything in code block will be executed
+            console.log("Your name is"+myname);
+
+        }
+        saymyname2("Mark")
+        saymyname2("Daniela")
+        $(document).ready (function(){
+          //alert("the document is ready");
+          $("#mydiv").html("Hey, I was able to change the DOM")
+
+        });
+    </script>
+
+</body>
+
+</html>
